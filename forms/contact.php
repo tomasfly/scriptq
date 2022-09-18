@@ -1,6 +1,6 @@
 <?
-$mail_to_send_to = "name@anydomain.tld";
-$from_email = "from@yourdomain.tld";
+$mail_to_send_to = "tomas.fleiderman@scriptquality.com";
+$from_email = "hello@scriptquality.com";
 $sendflag = $_REQUEST['sendflag'];    
 $name=$_REQUEST['name'];
 if ( $sendflag == "send" )
@@ -18,4 +18,4 @@ if ( $sendflag == "send" )
                      print("Message wasn't sent, please check that you have changed emails in the bottom");
                 }
         }
-        ?>
+?>
