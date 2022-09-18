@@ -13,9 +13,9 @@ if ( $sendflag == "send" )
                 $a = mail( $mail_to_send_to, $subject, $message, $headers );
                 if ($a)
                 {
-                     print("Message was sent, you can send another one");
+                     print("Your message was sent. Thank you.");
                 } else {
-                     print("Message wasn't sent, please check that you have changed emails in the bottom");
+                     print("There was an error with your e-mail.");
                 }
         }
 ?>
