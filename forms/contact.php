@@ -1,5 +1,5 @@
 <?
-$mail_to_send_to = "tomas.fleiderman@scriptquality.com";
+$mail_to_send_to = "tomas.fleiderman@gmail.com";
 $from_email = "hello@scriptquality.com";
 $sendflag = $_REQUEST['sendflag'];    
 $name=$_REQUEST['name'];
