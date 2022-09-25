@@ -20,7 +20,6 @@
       let thisForm = this;
 
       let action = thisForm.getAttribute('action');
-      let recaptcha = thisForm.getAttribute('data-recaptcha-site-key');
 
       if (!action) {
         displayError(thisForm, 'The form action property is not set!');
@@ -32,37 +31,16 @@
 
       let formData = new FormData(thisForm);
 
-      console.log(`is recaptcha ${recaptcha}`);
+      console.log(thisForm);
+      console.log(formData);
 
-      if (recaptcha) {
-        if (typeof grecaptcha !== 'undefined') {
-          grecaptcha.ready(function () {
-            try {
-              grecaptcha
-                .execute(recaptcha, { action: 'php_email_form_submit' })
-                .then((token) => {
-                  formData.set('recaptcha-response', token);
-                  php_email_form_submit(thisForm, action, formData);
-                });
-            } catch (error) {
-              displayError(thisForm, error);
-            }
-          });
-        } else {
-          displayError(
-            thisForm,
-            'The reCaptcha javascript API url is not loaded!'
-          );
-        }
-      } else {
-        console.log(`no captcha submitting`);
-        console.log(
-          `logging formData ${JSON.stringify(
-            formData
-          )} thisForm ${JSON.stringify(thisForm)} and action ${action}`
-        );
-        php_email_form_submit(thisForm, action, formData);
-      }
+      console.log(`no captcha submitting`);
+      console.log(
+        `logging formData ${JSON.stringify(formData)} thisForm ${JSON.stringify(
+          thisForm
+        )} and action ${action}`
+      );
+      php_email_form_submit(thisForm, action, formData);
     });
   });
 
@@ -76,7 +54,7 @@
       headers: { 'X-Requested-With': 'XMLHttpRequest' },
     })
       .then((response) => {
-        console.log(response);
+        console.log(response.body);
         console.log(`logging response ${JSON.stringify(response)}`);
         if (response.ok) {
           return response.text();
