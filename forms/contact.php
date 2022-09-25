@@ -1,12 +1,11 @@
 <?php 
-print('inside php');
 
 $mail_to_send_to = "tomas.fleiderman@gmail.com";
 $from_email = "hello@scriptquality.com";
 // $sendflag = $_REQUEST['sendflag'];
-print('print');
-print_r('print_r');
-print_r($_REQUEST);    
+// print('print');
+// print_r('print_r');
+// print_r($_REQUEST);    
 $name=$_REQUEST['name'];
 $sendflag = "send";
 if ( $sendflag == "send" )
