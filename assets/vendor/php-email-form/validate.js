@@ -6,8 +6,6 @@
 (function () {
   'use strict';
 
-  console.log('inside form validation');
-
   let forms = document.querySelectorAll('.php-email-form');
 
   console.log(forms);
@@ -30,32 +28,17 @@
       thisForm.querySelector('.sent-message').classList.remove('d-block');
 
       let formData = new FormData(thisForm);
-
-      console.log(thisForm);
-      console.log(formData);
-
-      console.log(`no captcha submitting`);
-      console.log(
-        `logging formData ${JSON.stringify(formData)} thisForm ${JSON.stringify(
-          thisForm
-        )} and action ${action}`
-      );
       php_email_form_submit(thisForm, action, formData);
     });
   });
 
   function php_email_form_submit(thisForm, action, formData) {
-    console.log(
-      `logging form data ${formData} with action ${action} and thisForm ${formData}`
-    );
     fetch(action, {
       method: 'POST',
       body: formData,
       headers: { 'X-Requested-With': 'XMLHttpRequest' },
     })
       .then((response) => {
-        console.log(response.body);
-        console.log(`logging response ${JSON.stringify(response)}`);
         if (response.ok) {
           return response.text();
         } else {
@@ -65,8 +48,8 @@
         }
       })
       .then((data) => {
-        console.log(`logging data ${JSON.stringify(data)}`);
         thisForm.querySelector('.loading').classList.remove('d-block');
+        console.log(data);
         if (data.trim() == 'OK') {
           thisForm.querySelector('.sent-message').classList.add('d-block');
           thisForm.reset();
@@ -80,7 +63,6 @@
         }
       })
       .catch((error) => {
-        console.log(`errored ${error}`);
         displayError(thisForm, error);
       });
   }

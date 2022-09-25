@@ -16,9 +16,10 @@ if ( $sendflag == "send" )
                 $message = $message.$_REQUEST['message'] . "\r\n" ;//add message from the contact form to existing message(name of the client)
                 $headers = "From: $from_email" . "\r\n" . "Reply-To: $email"  ;
                 $a = mail( $mail_to_send_to, $subject, $message, $headers );
+                error_log("sdffds");
                 if ($a)
                 {
-                     print("Your message was sent. Thank you.");
+                     print("OK");
                 } else {
                      print("There was an error with your e-mail.");
                 }
