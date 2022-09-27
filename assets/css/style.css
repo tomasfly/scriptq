@@ -1677,3 +1677,51 @@ section {
     padding: 2px 0;
   }
 }
+/*--------------------------------------------------------------
+Services - Integration Testing
+--------------------------------------------------------------*/
+.service-page{
+  margin-top: 0;
+}
+.service-hero{
+  height: 50vh;
+  width: 100%;
+  background: url('../img/services/9.jpg') no-repeat center/cover;
+  background-attachment: fixed;
+  display: grid;
+  place-items: center;
+}
+.service-hero h1{
+  color: #b3d1fa;
+}
+.service-hero h1 span{
+  color: white;
+}
+.service-texts{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+.s-txt-right, .s-txt-left{
+  width: 50%;
+  padding: 20px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+.s-txt-right{
+  background: url('../img/services/6.jpg') no-repeat center/cover;
+  background-attachment: fixed;
+  min-height: 200px;
+}
+.s-txt-left{
+  background-color: #062b5b;
+  color: #b3d1fa;
+  text-align: center;
+  min-width: 300px;
+}
+.s-txt-left span h3{
+  color: white;
+}
+.s-txt-left span p{
+  font-size: 13px;
+}
