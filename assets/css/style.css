@@ -1693,35 +1693,61 @@ Services - Integration Testing
 }
 .service-hero h1{
   color: #b3d1fa;
+  font-weight: bolder;
 }
 .service-hero h1 span{
   color: white;
 }
-.service-texts{
+.service-info{
   width: 100%;
   display: flex;
   flex-wrap: wrap-reverse;
-}
-.s-txt-right, .s-txt-left{
-  width: 50%;
-  padding: 20px;
-  min-width: 300px;
-  margin: 0 auto;
-}
-.s-txt-right{
-  background: url('../img/services/6.jpg') no-repeat center/cover;
-  background-attachment: fixed;
-  min-height: 200px;
-}
-.s-txt-left{
-  background-color: #062b5b;
-  color: #b3d1fa;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 5vw;
   text-align: center;
+}
+.service-info span, .service-info img{
+  width: 48%;
   min-width: 300px;
 }
-.s-txt-left span h3{
-  color: white;
+.service-benefits{
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 5px grey;
 }
-.s-txt-left span p{
-  font-size: 13px;
+.service-benefits h1{
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+.service-benefits span{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 5px;
+  width: 40%;
+  min-width: 250px;
+  color: black;
+  font-size: 14px;
+}
+.service-benefits span ul li{
+  text-transform: capitalize;
+}
+.service-info span button{
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #062b5b;
+  color: white;
+  border: none;
+}
+.service-info span button:hover, .service-info span button:active, .service-info span button:focus{
+  background: white;
+  color: #062b5b;
+  border: 1px solid #062b5b;
 }
