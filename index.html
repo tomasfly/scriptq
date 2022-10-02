@@ -121,20 +121,107 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1>Welcome to <span>ScriptQuality</span></h1>
-      <h2>Empowering Tomorrow</h2>
-      <div class="d-flex">
-        <!-- <a href="#mobile" class="btn-get-started scrollto">Services</a> -->
-        <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i
-            class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
-      </div>
-    </div>
-  </section><!-- End Hero -->
-
   <main id="main">
+
+  <div class="hero-sec">
+    <div id="particles-js"></div>
+      <span class="hero-text">
+          <h1>Welcome to <span>ScriptQuality</span></h1>
+          <h2>Empowering Tomorrow</h2>
+      </span>
+  </div>
+
+  <div class="section-about">
+    <span data-aos="fade-right">
+      <h1>About Us</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus incidunt enim officiis quaerat pariatur ipsam non minus, nesciunt voluptatibus eius necessitatibus provident harum repudiandae quidem natus et nostrum consequuntur illo laudantium facere reprehenderit, tenetur suscipit iure magni. Minus quidem repudiandae similique sed blanditiis earum beatae nemo modi eos, cupiditate sunt porro quo nam nobis provident incidunt doloribus quia assumenda alias rem aperiam cum voluptatibus in harum! Nostrum rem aspernatur numquam quas maiores, quo cumque maxime quibusdam aliquid incidunt ex iure.</p>
+    </span>
+    <img src="assets/img/aboutUs.png" alt="" data-aos="fade-left">
+  </div>
+
+  <div class="hero-services" data-aos="fade-up">
+    <h1>What We Can Do For You</h1>
+      <span>
+        <div class="hero-services-img">
+          <img src="assets/img/services/icons/1.png" alt="">
+        </div>
+        <h1>Mobile testing automation</h1>
+          <p>Save time and costs with automated tests</p>
+          <a href="#">More Info</a>
+      </span>
+      <span>
+        <div class="hero-services-img">
+          <img src="assets/img/services/icons/2.png" alt="">
+        </div>
+        <h1>Test coverage augmentation</h1>
+          <p>Increase the test coverage of your App</p>
+          <a href="#">More Info</a>
+      </span>
+      <span>
+        <div class="hero-services-img">
+          <img src="assets/img/services/icons/3.png" alt="">
+        </div>
+          <h1>performance testing</h1>
+          <p>Make sure your infrastructure is ready to handle the load with performance tests </p>
+          <a href="#">More Info</a>
+      </span>
+      <span>
+        <div class="hero-services-img">
+          <img src="assets/img/services/icons/4.png" alt="">
+        </div>
+        <h1>CI/CD</h1>
+          <p>Add value to the SDLC by integrating your tests in the pipelines</p>
+          <a href="#">More Info</a>
+      </span>
+  </div>  
+
+    <div id="featured-services" class="featured-services">
+      <h1>What We Can Do For You</h1>
+      <section class="services">
+        <div class="service-span">
+            <span>
+                <button onclick="accordion(this)" data-img="assets/img/services/computerMobileDraw.jpg">Testing Automation ⩔</button>
+                <div class="s-info">
+                    <p>
+                      Save time and costs with automated tests
+                    </p>
+                    <a href="#">Learn More →</a>
+                </div>
+            </span>
+            <span>
+                <button onclick="accordion(this)" data-img="assets/img/services/mobildevdraw.jpg">Test Coverage Augmentation ⩔</button>
+                <div class="s-info">
+                    <p>
+                        Increase the test coverage of your App
+                    </p>
+                    <a href="#">Learn More →</a>
+                </div>
+            </span>
+            <span>
+              <button onclick="accordion(this)" data-img="assets/img/services/performance1.jpg">Performance Testing ⩔</button>
+              <div class="s-info">
+                  <p>
+                    Make sure your infrastructure is ready to handle the load with performance tests
+                  </p>
+                  <a href="#">Learn More →</a>
+              </div>
+            </span>
+            <span>
+              <button onclick="accordion(this)" data-img="assets/img/services/pipeline1.jpg">CI/CD⩔</button>
+              <div class="s-info">
+                  <p>
+                    Add value to the SDLC by integrating your tests in the pipelines
+                  </p>
+                  <a href="#">Learn More →</a>
+              </div>
+            </span>
+        </div>
+        <div class="service-img-div">
+          <img class='service-img' src="assets/img/services/apiTesting.jpg" alt="">
+        </div>
+      </section>
+    </div>
+
 
     <!-- d-none d-lg-block will make that this section is only displayed in big screens  -->
     <section id="slider" class="d-none d-lg-block">
@@ -165,332 +252,6 @@
 
       </div>
 
-    </section>
-
-    <!-- ======= Featured Services Section ======= -->
-    <section id="featured-services" class="featured-services">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-cloud"></i></div>
-              <h4 class="title"><a href="#mobile">Mobile testing automation</a></h4>
-              <p class="description"><a href="#mobile"></a>Save time and costs with automated tests</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-code-block"></i></div>
-              <h4 class="title"><a href="">Test coverage augmentation</a></h4>
-              <p class="description">Increase the test coverage of your App</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon"><i class="bx bx-test-tube"></i></div>
-              <h4 class="title"><a href="">Performance testing</a></h4>
-              <p class="description">Make sure your infrastructure is ready to handle the load with performance tests
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-              <div class="icon"><i class="bx bx-cog"></i></div>
-              <h4 class="title"><a href="">CI/CD</a></h4>
-              <p class="description">Add value to the SDLC by integrating your tests in the pipelines</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Featured Services Section -->
-
-    <section id="mobile" class="about section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <!--<h2>About</h2>-->
-          <h3>Services</span></h3>
-          <!-- <p>Save costs and money with mobile automated tests and go to production safely</p> -->
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/services/computerMobileDraw.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
-            <h3>Testing automation</h3>
-            <!-- <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua.
-            </p> -->
-            <!-- <ul>
-              <li>
-                <i class="bx bx-store-alt"></i>
-                <div>
-                  <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                  <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
-                </div>
-              </li>
-              <li>
-                <i class="bx bx-images"></i>
-                <div>
-                  <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                  <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
-                </div>
-              </li>
-            </ul> -->
-            <p>
-              Every company developing a product should have tests in place. Testing is an essential part of software
-              development, especially to guarantee quality. Many smaller and mid-sized companies don't give testing much
-              attention even though it's essential for delivering a strong product. Just like it's important to have
-              tests in place, it also matters how we run these tests.<br><br>
-
-              Save time and costs with mobile testing automation. In software development, every minute counts. Even
-              though transitioning to testing automation is not straight forward, in the long run it will results in
-              beneficiary results.<br><br>
-
-              Mobile testing will allow you to go to production safely. Stop spending lots of hours in manual testing
-              and coordination effort of the team to deploy to production. Automated tests will give you confidence by
-              providing reports in the format you feel it is more convinient that will probably include: version tested,
-              environment, tests executed, test status, pass rate and other cuantitative data that will help you on
-              decission making.<br><br>
-
-              Making sure your mobile App runs in all kinds of devices: iOS, Android and it's respective OS versions.
-              Having a good testability matrix is vital for reducing error rates in production which will result in
-              better customer experience.<br><br>
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <section id="testcoverage" class="about section-bg">
-      <div class="container" data-aos="fade-up">
-        <div class="row">
-
-          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
-            <h3>Test coverage augmentation</h3>
-            <!-- <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua.
-            </p> -->
-            <!-- <ul>
-              <li>
-                <i class="bx bx-store-alt"></i>
-                <div>
-                  <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                  <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
-                </div>
-              </li>
-              <li>
-                <i class="bx bx-images"></i>
-                <div>
-                  <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                  <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
-                </div>
-              </li>
-            </ul> -->
-            <p>
-              Gain coverage in different levels: Unit, integration, or E2E testing. We help you determine in which level
-              of testing you might be lacking coverage.<br><br>
-
-              When your application grows it is likely that it will start getting more and more funcionalities. By the
-              time new changes are being added to your code base, there is more risk that unexpected behaviour occurs.
-              Keep an eye on how new and previous funcionalities are behaving with test coverage augmentation.<br><br>
-
-              Organize your test cases in suites and execute them based on the need. Use regression test after a big
-              refactor and a smoke test every time there is a new change in the code base. Find the right balance on the
-              frequency you want to run your tests.<br><br>
-
-              Regression testing is the activity of retesting a program so as to ensure that no new errors have been
-              introduced into the previously tested code. However this activity does not involve rerunning the entire
-              test suite but selecting only a few test cases that exercise the changes. Suppose there is a program P and
-              P' is it's modified version. The regression test suite so selected must be able to reveal the differences
-              between P and P' that would help the developer discover errors caused by changes. More and more emphasis
-              has been laid in identifying the regression test suites and ordering them. However, less focus have been
-              laid on the effectiveness of regression test suite in response to changes.
-            </p>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/services/programmer1.jpg" class="img-fluid" alt="">
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="performance" class="about section-bg">
-      <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/services/performance1.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
-            <h3>Performance testing</h3>
-            <!-- <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua.
-            </p> -->
-            <!-- <ul>
-                  <li>
-                    <i class="bx bx-store-alt"></i>
-                    <div>
-                      <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                      <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
-                    </div>
-                  </li>
-                  <li>
-                    <i class="bx bx-images"></i>
-                    <div>
-                      <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                      <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
-                    </div>
-                  </li>
-                </ul> -->
-            <p>
-
-              Having a solid software foundation is a key principle of generating software success. Measuring
-              performance of basic software functions allows business leaders to make key decisions to around the setup
-              of the software.<br><br>
-
-              Measuring performance speed, accuracy and stability is a vital aspect of software performance testing. It
-              allows you to monitor the crucial components of your software under duress and can give you vital
-              information on how the software will be able to handle scalability.<br><br>
-
-              Make sure your system is scalable and ready for migrating to production. Once your software has been
-              developed, it needs to undergo through non functional testing which includes running performance
-              tests.<br><br>
-
-              Usually development and testing environment have got limited infrastructure compared to production
-              environments. It is important that you test your system as well as your infrastructure by firing up
-              performance tests.<br><br>
-
-              Performance also has to do with how your App was designed. It may contain uncovered bugs which may lead to
-              memory leaks in production.<br><br>
-
-              Identify and isolate bottlenecks. Even if you are having heavy server processing, dealing with high
-              concurrency or big amounts of data, you have to be ready to handle the load.<br><br>
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="cicd" class="about section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-
-          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
-            <h3>Continuous delivery</h3>
-            <!-- <ul>
-                  <li>
-                    <i class="bx bx-store-alt"></i>
-                    <div>
-                      <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                      <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
-                    </div>
-                  </li>
-                  <li>
-                    <i class="bx bx-images"></i>
-                    <div>
-                      <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                      <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
-                    </div>
-                  </li>
-                </ul> -->
-            <p>
-              Software development life cycle (SDLC) is not complete until you integrate your tests in the pipeline. Add
-              your unit, integration or E2E testing and make sure no braking changes are being introduced.<br><br>
-
-              Quickly identify newly introduced bugs by incrementing the frequency of executions of your pipeline. As a
-              rule of thumb the earlier a defect is detected in the code, the lower will be the costs of fixing it.
-              Adding a new stage in your pipeline with tests will help you to isolate issues and make sure your software
-              remains stable through time.<br><br>
-
-              Continuous Integration is the practice where developers merge the changes to the code base to the main
-              branch as often as possible. These changes are validated by creating a build and then running automated
-              tests against the build. If these tests don’t pass, the changes aren’t merged, and developers avoid
-              integration challenges that can happen.<br><br>
-
-              Continuous Delivery is an extension of CI since it enables automation to deploy all the code changes to an
-              environment (dev, qa, stage, prod, etc) after the changes have been merged. The artifact may be built as
-              part of CI or as part of this process since the source of truth (your repository) is reliable given your
-              CI process.<br><br>
-
-              Continuous Deployment takes the process one step further than continuous delivery. Here, all changes that
-              pass the verification steps at each stage in the pipeline are released to production. This process is
-              completely automated and only a failed verification step will prevent pushing the changes to
-              production.<br><br>
-            </p>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/services/mobildevdraw.jpg" class="img-fluid" alt="">
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="apitesting" class="about section-bg">
-      <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/services/apitesting.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
-            <h3>API Testing</h3>
-            <!-- <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua.
-            </p> -->
-            <!-- <ul>
-                  <li>
-                    <i class="bx bx-store-alt"></i>
-                    <div>
-                      <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                      <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
-                    </div>
-                  </li>
-                  <li>
-                    <i class="bx bx-images"></i>
-                    <div>
-                      <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                      <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
-                    </div>
-                  </li>
-                </ul> -->
-            <p>
-
-              API TESTING is a software testing type that validates Application Programming Interfaces (APIs). The purpose of API Testing is to check the functionality, reliability, performance, and security of the programming interfaces. In API Testing, instead of using standard user inputs(keyboard) and outputs, you use software to send calls to the API, get output, and note down the system’s response. API tests are very different from GUI Tests and won’t concentrate on the look and feel of an application. It mainly concentrates on the business logic layer of the software architecture.<br><br>
-
-              API testing can analyze multiple endpoints, such as web services, databases or web user interfaces. Testers should watch for failures or unexpected inputs. Response time should be within an acceptable agreed-upon limit, and the API should be secured against potential attacks.
-
-              
-              Tests should also be constructed to ensure users can't affect the application in unexpected ways, that the API can handle the expected user load and that the API can work across multiple browsers and devices.
-              
-              The test should also analyze the results of nonfunctional tests as well, including performance and security.<br><br>
-              APIs have become the center of software development, connecting and transferring data and logic across disparate systems and applications. Luckily, testing them can greatly improve the efficiency of your testing strategy as a whole, helping you deliver software faster than ever.
-
-              APIs, or Application Programming Interfaces, are the connecting tissue between different systems or layers of an application. Applications often have three layers: a data layer, a service (API) layer, and a presentation (UI) layer. The API layer contains the business logic of an application - the rules of how users can interact with services, data, or functions of the app. 
-            </p>
-          </div>
-        </div>
-
-      </div>
     </section>
 
     <!--<section id="team" class="team section-bg">
@@ -585,9 +346,6 @@
           </div>
 
           <div class="col-lg-6">
-                      <div class="section-title">
-          <h3><span>We would like to hear from you!</span></h3>
-        </div>
             <!--
             <form method="POST" action="forms/contact.php" id="contact-form">
               <p><label>First Name:</label> <input name="name" type="text" /></p>
@@ -597,6 +355,7 @@
               </form>
               -->
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <h3><span>We would like to hear from you!</span></h3>
               <div class="row">
                 <div class="col form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -737,6 +496,14 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <!-- Accordion -->
+  <script src="assets/js/accordion.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'assets/js/particles.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
+  </script>
 
 </body>
 
