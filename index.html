@@ -1,87 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>ScriptQuality</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>ScriptQuality</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png" />
+    <link
+      href="assets/img/services/apple-touch-icon.png"
+      rel="apple-touch-icon"
+    />
 
-  <!-- Favicons -->
-  <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
-  <link href="assets/img/services/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
+    <!-- =======================================================
   * Template Name: BizLand - v3.7.0
   * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MM15SYGE72"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-MM15SYGE72"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-  gtag('config', 'G-MM15SYGE72');
-</script>
+    gtag('config', 'G-MM15SYGE72');
+  </script>
 
-<body>
+  <body>
+    <header id="header" class="d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+        <!-- <h1 class="logo"><a href="index.html">StackBeyond<span>.</span></a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="index.html" class="logo"
+          ><img src="assets/img/logofinal.svg" alt=""
+        /></a>
+        <!-- <h1 class="logo"><a href="index.html">StackBeyond<span>.</span></a></h1> -->
 
-  <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <!-- <h1 class="logo"><a href="index.html">StackBeyond<span>.</span></a></h1> -->
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="index.html" class="logo"><img src="assets/img/logofinal.svg" alt=""></a>
-      <!-- <h1 class="logo"><a href="index.html">StackBeyond<span>.</span></a></h1> -->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li class="dropdown">
-            <a href="#">
-              <span>Services</span>
-              <i class="bi bi-chevron-down">
-              </i>
-            </a>
-            <ul>
-              <li><a href="#mobile">Mobile testing automation</a></li>
-              <li><a href="#testcoverage" class="nav-link scrollto">Test coverage augmentation</a></li>
-              <li><a href="#performance" class="nav-link scrollto">Performance testing</a></li>
-              <li><a href="#cicd" class="nav-link scrollto">Continuous testing</a></li>
-              <li><a href="#apitesting" class="nav-link scrollto">API Testing</a></li>
-              <!-- <li><a href="#qaconsultancy" class="nav-link scrollto">QA Consultancy</a></li>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li class="dropdown">
+              <a href="#">
+                <span>Services</span>
+                <i class="bi bi-chevron-down"> </i>
+              </a>
+              <ul>
+                <li><a href="#mobile">Mobile testing automation</a></li>
+                <li>
+                  <a href="#testcoverage" class="nav-link scrollto"
+                    >Test coverage augmentation</a
+                  >
+                </li>
+                <li>
+                  <a href="#performance" class="nav-link scrollto"
+                    >Performance testing</a
+                  >
+                </li>
+                <li>
+                  <a href="#cicd" class="nav-link scrollto"
+                    >Continuous testing</a
+                  >
+                </li>
+                <li>
+                  <a href="#apitesting" class="nav-link scrollto"
+                    >API Testing</a
+                  >
+                </li>
+                <!-- <li><a href="#qaconsultancy" class="nav-link scrollto">QA Consultancy</a></li>
               <li><a href="#unittesting" class="nav-link scrollto">Unit Testing</a></li> -->
-
-            </ul>
-          </li>
-          <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li>  -->
-          <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
-          <!-- <li><a class="nav-link scrollto" href="blog.html">Blog</a></li> -->
-          <li><a class="nav-link scrollto" href="./methodology.html">Methodology</a></li>
-          <!-- <li><a class="nav-link scrollto" href="">Careers</a></li> -->
-          <!-- <li class="dropdown">
+              </ul>
+            </li>
+            <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li>  -->
+            <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
+            <!-- <li><a class="nav-link scrollto" href="blog.html">Blog</a></li> -->
+            <li>
+              <a class="nav-link scrollto" href="./methodology.html"
+                >Methodology</a
+              >
+            </li>
+            <!-- <li><a class="nav-link scrollto" href="">Careers</a></li> -->
+            <!-- <li class="dropdown">
             <a href="#">
               <span>Blog</span>
               <i class="bi bi-chevron-down">
@@ -107,154 +142,218 @@
 
             </ul>
           </li> -->
-          <!-- - mentor resources
+            <!-- - mentor resources
           - good practices
           - latest tools and trends
           - we dedicate a time to get to know resource and share ideas around good practices: soft skills and hard skills (I've seen lack of both)
           - matching criteria
           - avoid resource working in ambiguous way -->
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
 
-    </div>
-  </header><!-- End Header -->
-
-  <main id="main">
-
-  <div class="hero-sec">
-    <div id="particles-js"></div>
-      <span class="hero-text">
+    <main id="main">
+      <div class="hero-sec">
+        <div id="particles-js"></div>
+        <span class="hero-text">
           <h1>Welcome to <span>ScriptQuality</span></h1>
           <h2>Empowering Tomorrow</h2>
-      </span>
-  </div>
-
-  <div class="section-about">
-    <span data-aos="fade-right">
-      <h1>About Us</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus incidunt enim officiis quaerat pariatur ipsam non minus, nesciunt voluptatibus eius necessitatibus provident harum repudiandae quidem natus et nostrum consequuntur illo laudantium facere reprehenderit, tenetur suscipit iure magni. Minus quidem repudiandae similique sed blanditiis earum beatae nemo modi eos, cupiditate sunt porro quo nam nobis provident incidunt doloribus quia assumenda alias rem aperiam cum voluptatibus in harum! Nostrum rem aspernatur numquam quas maiores, quo cumque maxime quibusdam aliquid incidunt ex iure.</p>
-    </span>
-    <img src="assets/img/aboutUs.png" alt="" data-aos="fade-left">
-  </div>
-
-  <div class="hero-services" data-aos="fade-up">
-    <h1>What We Can Do For You</h1>
-      <span>
-        <div class="hero-services-img">
-          <img src="assets/img/services/icons/1.png" alt="">
-        </div>
-        <h1>Mobile testing automation</h1>
-          <p>Save time and costs with automated tests</p>
-          <a href="#">More Info</a>
-      </span>
-      <span>
-        <div class="hero-services-img">
-          <img src="assets/img/services/icons/2.png" alt="">
-        </div>
-        <h1>Test coverage augmentation</h1>
-          <p>Increase the test coverage of your App</p>
-          <a href="#">More Info</a>
-      </span>
-      <span>
-        <div class="hero-services-img">
-          <img src="assets/img/services/icons/3.png" alt="">
-        </div>
-          <h1>performance testing</h1>
-          <p>Make sure your infrastructure is ready to handle the load with performance tests </p>
-          <a href="#">More Info</a>
-      </span>
-      <span>
-        <div class="hero-services-img">
-          <img src="assets/img/services/icons/4.png" alt="">
-        </div>
-        <h1>CI/CD</h1>
-          <p>Add value to the SDLC by integrating your tests in the pipelines</p>
-          <a href="#">More Info</a>
-      </span>
-  </div>  
-
-    <div id="featured-services" class="featured-services">
-      <h1>What We Can Do For You</h1>
-      <section class="services">
-        <div class="service-span">
-            <span>
-                <button onclick="accordion(this)" data-img="assets/img/services/computerMobileDraw.jpg">Testing Automation ⩔</button>
-                <div class="s-info">
-                    <p>
-                      Save time and costs with automated tests
-                    </p>
-                    <a href="#">Learn More →</a>
-                </div>
-            </span>
-            <span>
-                <button onclick="accordion(this)" data-img="assets/img/services/mobildevdraw.jpg">Test Coverage Augmentation ⩔</button>
-                <div class="s-info">
-                    <p>
-                        Increase the test coverage of your App
-                    </p>
-                    <a href="#">Learn More →</a>
-                </div>
-            </span>
-            <span>
-              <button onclick="accordion(this)" data-img="assets/img/services/performance1.jpg">Performance Testing ⩔</button>
-              <div class="s-info">
-                  <p>
-                    Make sure your infrastructure is ready to handle the load with performance tests
-                  </p>
-                  <a href="#">Learn More →</a>
-              </div>
-            </span>
-            <span>
-              <button onclick="accordion(this)" data-img="assets/img/services/pipeline1.jpg">CI/CD⩔</button>
-              <div class="s-info">
-                  <p>
-                    Add value to the SDLC by integrating your tests in the pipelines
-                  </p>
-                  <a href="#">Learn More →</a>
-              </div>
-            </span>
-        </div>
-        <div class="service-img-div">
-          <img class='service-img' src="assets/img/services/apiTesting.jpg" alt="">
-        </div>
-      </section>
-    </div>
-
-
-    <!-- d-none d-lg-block will make that this section is only displayed in big screens  -->
-    <section id="slider" class="d-none d-lg-block">
-      <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/img/slider/qaslide.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/slider/automationslide.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/slider/mobileslide.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-
+        </span>
       </div>
 
-    </section>
+      <div class="section-about">
+        <span data-aos="fade-right">
+          <h1>About Us</h1>
+          <p>
+            We see ourselves as being accountable for our client's resources,
+            reputation, and vision, a responsibility we take very seriously. We
+            continuously think about ways to improve the quality of the products
+            we are working on and the tools we use, generating new approaches,
+            solutions, and ideas daily. Through manual testing, strategic test
+            planning, advanced test automation, or test framework creation—you
+            can be sure that the quality of your product is in safe hands.
+          </p>
+        </span>
+        <img src="assets/img/aboutUs.png" alt="" data-aos="fade-left" />
+      </div>
 
-    <!--<section id="team" class="team section-bg">
+      <div class="hero-services" data-aos="fade-up">
+        <h1>What We Can Do For You</h1>
+        <span>
+          <div class="hero-services-img">
+            <img src="assets/img/services/icons/1.png" alt="" />
+          </div>
+          <h1>Mobile testing automation</h1>
+          <p>Save time and costs with automated tests</p>
+          <a href="#">More Info</a>
+        </span>
+        <span>
+          <div class="hero-services-img">
+            <img src="assets/img/services/icons/2.png" alt="" />
+          </div>
+          <h1>Test coverage augmentation</h1>
+          <p>Increase the test coverage of your App</p>
+          <a href="#">More Info</a>
+        </span>
+        <span>
+          <div class="hero-services-img">
+            <img src="assets/img/services/icons/3.png" alt="" />
+          </div>
+          <h1>performance testing</h1>
+          <p>
+            Make sure your infrastructure is ready to handle the load with
+            performance tests
+          </p>
+          <a href="#">More Info</a>
+        </span>
+        <span>
+          <div class="hero-services-img">
+            <img src="assets/img/services/icons/4.png" alt="" />
+          </div>
+          <h1>CI/CD</h1>
+          <p>
+            Add value to the SDLC by integrating your tests in the pipelines
+          </p>
+          <a href="#">More Info</a>
+        </span>
+      </div>
+
+      <div id="featured-services" class="featured-services">
+        <h1>What We Can Do For You</h1>
+        <section class="services">
+          <div class="service-span">
+            <span>
+              <button
+                onclick="accordion(this)"
+                data-img="assets/img/services/computerMobileDraw.jpg"
+              >
+                Testing Automation ⩔
+              </button>
+              <div class="s-info">
+                <p>Save time and costs with automated tests</p>
+                <a href="#">Learn More →</a>
+              </div>
+            </span>
+            <span>
+              <button
+                onclick="accordion(this)"
+                data-img="assets/img/services/mobildevdraw.jpg"
+              >
+                Test Coverage Augmentation ⩔
+              </button>
+              <div class="s-info">
+                <p>Increase the test coverage of your App</p>
+                <a href="#">Learn More →</a>
+              </div>
+            </span>
+            <span>
+              <button
+                onclick="accordion(this)"
+                data-img="assets/img/services/performance1.jpg"
+              >
+                Performance Testing ⩔
+              </button>
+              <div class="s-info">
+                <p>
+                  Make sure your infrastructure is ready to handle the load with
+                  performance tests
+                </p>
+                <a href="#">Learn More →</a>
+              </div>
+            </span>
+            <span>
+              <button
+                onclick="accordion(this)"
+                data-img="assets/img/services/pipeline1.jpg"
+              >
+                CI/CD⩔
+              </button>
+              <div class="s-info">
+                <p>
+                  Add value to the SDLC by integrating your tests in the
+                  pipelines
+                </p>
+                <a href="#">Learn More →</a>
+              </div>
+            </span>
+          </div>
+          <div class="service-img-div">
+            <img
+              class="service-img"
+              src="assets/img/services/apiTesting.jpg"
+              alt=""
+            />
+          </div>
+        </section>
+      </div>
+
+      <!-- d-none d-lg-block will make that this section is only displayed in big screens  -->
+      <section id="slider" class="d-none d-lg-block">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./assets/img/slider/qaslide.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./assets/img/slider/automationslide.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./assets/img/slider/mobileslide.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--<section id="team" class="team section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -301,52 +400,52 @@
       </div>
     </section>  -->
 
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h3><span>Contact Us</span></h3>
+            <!-- <p>We would like to hear from you!</p> -->
+          </div>
 
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-6">
+              <div class="info-box mb-4">
+                <i class="bx bx-map"></i>
+                <h3>Our Address</h3>
+                <p>Carrer de Vulcà, 67, 08530 La Garriga, Barcelona</p>
+              </div>
+            </div>
 
-        <div class="section-title">
-          <h3><span>Contact Us</span></h3>
-          <!-- <p>We would like to hear from you!</p> -->
-        </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="info-box mb-4">
+                <i class="bx bx-envelope"></i>
+                <h3>Email Us</h3>
+                <p>hello@scriptquality.com</p>
+              </div>
+            </div>
 
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-6">
-            <div class="info-box mb-4">
-              <i class="bx bx-map"></i>
-              <h3>Our Address</h3>
-              <p>Carrer de Vulcà, 67, 08530 La Garriga, Barcelona</p>
+            <div class="col-lg-3 col-md-6">
+              <div class="info-box mb-4">
+                <i class="bx bx-phone-call"></i>
+                <h3>Call Us</h3>
+                <p>+34 684 660 753</p>
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="info-box  mb-4">
-              <i class="bx bx-envelope"></i>
-              <h3>Email Us</h3>
-              <p>hello@scriptquality.com</p>
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-6">
+              <iframe
+                class="mb-4 mb-lg-0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=41.6735369032664,2.2796094417572026+(ScriptQuality)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                frameborder="0"
+                style="border: 0; width: 100%; height: 384px"
+                allowfullscreen
+              ></iframe>
             </div>
-          </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="info-box  mb-4">
-              <i class="bx bx-phone-call"></i>
-              <h3>Call Us</h3>
-              <p>+34 684 660 753</p>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-6 ">
-            <iframe class="mb-4 mb-lg-0"
-            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=41.6735369032664,2.2796094417572026+(ScriptQuality)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
-          </div>
-
-          <div class="col-lg-6">
-            <!--
+            <div class="col-lg-6">
+              <!--
             <form method="POST" action="forms/contact.php" id="contact-form">
               <p><label>First Name:</label> <input name="name" type="text" /></p>
               <p><label>Email Address:</label> <input style="cursor: pointer;" name="email" type="text" /></p>
@@ -354,97 +453,179 @@
               <p><input name="sendflag" type="submit" value="send" /></p>
               </form>
               -->
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <h3><span>We would like to hear from you!</span></h3>
-              <div class="row">
-                <div class="col form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              <form
+                action="forms/contact.php"
+                method="post"
+                role="form"
+                class="php-email-form"
+              >
+                <h3><span>We would like to hear from you!</span></h3>
+                <div class="row">
+                  <div class="col form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
                 </div>
-                <div class="col form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                    required
+                  />
                 </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button name="sendflag" type="submit" value="send" data-bs-target="#exampleModal">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="5"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button
+                    name="sendflag"
+                    type="submit"
+                    value="send"
+                    data-bs-target="#exampleModal"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
+      </section>
+
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </main>
+    <!-- End #main -->
 
-  </main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>ScriptQuality<span>.</span></h3>
+              <p>
+                Carrer de Vulcà, 67 <br />
+                08530 La Garriga, Barcelona<br />
+                Spain <br /><br />
+                <strong>Phone:</strong> +34 684 660 753<br />
+                <strong>Email:</strong> hello@scriptquality.com<br />
+              </p>
+            </div>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row justify-content-md-center">
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#hero">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#mobile">Services</a>
+                </li>
+                <!--<li><i class="bx bx-chevron-right"></i> <a href="#team">Team</a></li>-->
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="methodology.html">Methodology</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>ScriptQuality<span>.</span></h3>
-            <p>
-              Carrer de Vulcà, 67 <br>
-              08530 La Garriga, Barcelona<br>
-              Spain <br><br>
-              <strong>Phone:</strong> +34 684 660 753<br>
-              <strong>Email:</strong> hello@scriptquality.com<br>
-            </p>
-          </div>
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#mobile">Mobile testing automation</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#testcoverage">Test coverage augmentation</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#performance">Performance testing</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#cicd">Continuous testing</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#apitesting">API Testing</a>
+                </li>
+              </ul>
+            </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#mobile">Services</a></li>
-              <!--<li><i class="bx bx-chevron-right"></i> <a href="#team">Team</a></li>-->
-              <li><i class="bx bx-chevron-right"></i> <a href="methodology.html">Methodology</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#mobile">Mobile testing automation</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#testcoverage">Test coverage augmentation</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#performance">Performance testing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#cicd">Continuous testing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#apitesting">API Testing</a></li>
-            </ul>
-          </div>
-
-          <!-- <li><a href="#mobile">Mobile testing automation</a></li>
+            <!-- <li><a href="#mobile">Mobile testing automation</a></li>
           <li><a href="#testcoverage" class="nav-link scrollto">Test coverage augmentation</a></li>
           <li><a href="#performance" class="nav-link scrollto">Performance testing</a></li>
           <li><a href="#cicd" class="nav-link scrollto">CI/CD</a></li>
@@ -453,7 +634,7 @@
           <li><a href="#" class="nav-link scrollto">API Testing</a></li>
           <li><a href="#" class="nav-link scrollto">QA Consultancy</a></li>
           <li><a href="#" class="nav-link scrollto">Cloud testing automation</a></li> -->
-          <!-- 
+            <!-- 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Social Networks</h4>
             <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
@@ -465,12 +646,11 @@
               <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div> -->
-
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- <div class="container py-4">
+      <!-- <div class="container py-4">
       <div class="copyright">
         &copy; Copyright <strong><span>BizLand</span></strong>. All Rights Reserved
       </div>
@@ -478,33 +658,35 @@
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div> -->
-  </footer><!-- End Footer -->
+    </footer>
+    <!-- End Footer -->
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <!-- Accordion -->
-  <script src="assets/js/accordion.js"></script>
-  <script>
-    particlesJS.load('particles-js', 'assets/js/particles.json', function() {
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Accordion -->
+    <script src="assets/js/accordion.js"></script>
+    <script>
+      particlesJS.load('particles-js', 'assets/js/particles.json', function () {
         console.log('callback - particles.js config loaded');
-    });
-  </script>
-
-</body>
-
+      });
+    </script>
+  </body>
 </html>
